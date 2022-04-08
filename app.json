@@ -1,6 +1,6 @@
 {
-  "name": "Man-Userbot",
-  "description": "[Man-Userbot] userbot Telegram modular yang berjalan pada Python 3.9+",
+  "name": "Shark-Userbot",
+  "description": "[Shark-Userbot] userbot Telegram modular yang berjalan pada Python 3.9+",
   "stack": "container",
   "env": {
     "API_KEY": {
@@ -16,7 +16,7 @@
       "required": false
     },
      "STRING_SESSION": {
-      "description": "Dapatkan String Session di Grup » https://t.me/SharingUserbot » Lalu ketik #string",
+      "description": "Dapatkan String Session di Grup » https://t.me/SharkUserbot » Lalu ketik #string",
       "required": true
     },
     "HEROKU_APP_NAME": {
