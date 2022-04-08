@@ -20,15 +20,13 @@ from userbot.events import man_cmd
 from userbot.utils import edit_delete, edit_or_reply
 
 DEF_UNAPPROVED_MSG = (
-    "╔════════════════════╗\n"
-    "     ⛑ 𝗔𝗧𝗧𝗘𝗡𝗧𝗜𝗢𝗡 𝗣𝗟𝗘𝗔𝗦𝗘 ⛑\n"
-    "╚════════════════════╝\n"
-    "• Saya belum menyetujui anda untuk PM.\n"
-    "• Tunggu sampai saya menyetujui PM anda.\n"
-    "• Jangan Spam Chat atau anda akan otomatis diblokir.\n"
-    "╔════════════════════╗\n"
-    "    𝗣𝗲𝘀𝗮𝗻 𝗢𝘁𝗼𝗺𝗮𝘁𝗶𝘀 𝗕𝘆 -𝗨𝘀𝗲𝗿𝗕𝗼𝘁\n"
-    "╚════════════════════╝\n"
+    "**PM Security From Blvckcards's !**\n"
+    "\n"
+    "✦ Saya belum menyetujui anda untuk PM.\n"
+    "✦ Tunggu sampai saya menyetujui PM anda.\n"
+    "✦ Jangan Spam Chat atau anda akan otomatis diblokir.\n"
+    "\n"
+    "**⚙️ Powered by : @BLVCKCARDS's**\n"
 )
 
 
@@ -243,10 +241,10 @@ async def approvepm(apprvpm):
     try:
         approve(uid)
     except IntegrityError:
-        return await edit_delete(apprvpm, "**Pesan Anda Sudah Diterima**")
+        return await edit_delete(apprvpm, "**Owner has been approve...**")
 
     await edit_delete(
-        apprvpm, f"**Menerima Pesan Dari** [{name0}](tg://user?id={uid})", 5
+        apprvpm, f"**Approve message from** [{name0}](tg://user?id={uid})", 5
     )
 
 
