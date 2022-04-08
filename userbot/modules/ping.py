@@ -7,6 +7,7 @@
 # FROM Man-Userbot <https://github.com/mrismanaziz/Man-Userbot>
 # t.me/SharingUserbot & t.me/Lunatic0de
 
+import random
 import time
 from datetime import datetime
 from secrets import choice
@@ -25,8 +26,22 @@ absen = [
     "**Hadir ganteng** 🥵",
     "**Hadir bro** 😎",
     "**Hadir kak maap telat** 🥺",
+    "**Hey Ayang Apa kabar...**",
 ]
 
+shark = [
+    "**Hey Boss I'am Alive...**",
+    "**__Haloo, Ayang lagi apa?__**",
+    "**__Ayanggg aku kangenn, kmu dari mana aja...__**",
+    "**__Boss saya sudah transfer uangnya ke rekening boss__**",
+    "**__Boss Menikahlah dengan saudara saya dia masih jomblo__**",
+    "**__Assalamu'alaikum...__**",
+    "**__Haii Kings, Why you call me?__**",
+    "**««〔 🦈 〕»»** `Yes I'am Shark... !`",
+    "**__Halo Tuan Muda...__**",
+    "**__Iya Tuan saya Bersedia Menikah dengan Tuan Muda...__**",
+    "**__Tuan Muda, Anda sudah ditunggu para Putri Kerajaan__**",
+]
 
 async def get_readable_time(seconds: int) -> str:
     count = 0
@@ -54,21 +69,24 @@ async def get_readable_time(seconds: int) -> str:
 
 
 @man_cmd(pattern="ping$")
+@register(pattern=r"^\.pink(?: |$)(.*)", sudo=True)
 async def _(ping):
     uptime = await get_readable_time((time.time() - StartTime))
     start = datetime.now()
-    xx = await edit_or_reply(ping, "**✣**")
-    await xx.edit("**✣✣**")
-    await xx.edit("**✣✣✣**")
-    await xx.edit("**✣✣✣✣**")
+    xx = await edit_or_reply(ping, "**««〔 🦈 〕»»**")
+    await xx.edit("**« « 〔 🦈 〕 » »**")
+    await xx.edit("**»»〔 🦈 〕««**")
+    await xx.edit("**««〔 🦈 〕»»**")
+    await xx.edit("**« « 〔 🦈 〕 » »**")
+    await xx.edit("**»»〔 🦈 〕««**")
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     user = await ping.client.get_me()
     await xx.edit(
-        f"**PONG!!🏓**\n"
-        f"✣ **Pinger** - `%sms`\n"
-        f"✣ **Uptime -** `{uptime}` \n"
-        f"**✦҈͜͡Owner :** [{user.first_name}](tg://user?id={user.id})" % (duration)
+        f"**🐧 Ping-uin!**\n"
+        f"✦ **Pinger** - `%s ms`\n"
+        f"✦ **Uptime -** `{uptime}` \n"
+        f"✦ **Owner :** [{user.first_name}](tg://user?id={user.id})" % (duration)
     )
 
 
@@ -153,7 +171,7 @@ async def _(pong):
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     await kping.edit(
-        f"**NGENTOT!! 🐨**\n**KAMPANG** : %sms\n**Bot Uptime** : {uptime}🕛" % (duration)
+        f"**NGENTOT!! 🐨**\n**Aghhhhhhhhhhh** : %sms\n**Bot Uptime** : {uptime}🕛" % (duration)
     )
 
 
@@ -194,15 +212,17 @@ async def _(pong):
     xx = await edit_or_reply(pong, "`Sepong.....🏓`")
     end = datetime.now()
     duration = (end - start).microseconds / 9000
-    await xx.edit("🏓 **Ping!**\n`%sms`" % (duration))
+    await xx.edit("🏓 **Ping !**\n`%sm s`" % (duration))
 
 
 # KALO NGEFORK absen ini GA USAH DI HAPUS YA GOBLOK 😡
 @register(pattern=r"^\.absen$", sudo=True)
 async def risman(ganteng):
-    await ganteng.reply(choice(absen))
+    await ganteng.reply(random.choice(absen))
 
-
+@register(pattern=r"^\.shark$", sudo=True)
+async def boss(blvckcards):
+    await blvckcards.reply(random.choice(shark))
 # JANGAN DI HAPUS GOBLOK 😡 LU COPY AJA TINGGAL TAMBAHIN
 # DI HAPUS GUA GBAN YA 🥴 GUA TANDAIN LU AKUN TELENYA 😡
 
