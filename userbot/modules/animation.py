@@ -420,7 +420,7 @@ async def _(event):
     await edit_or_reply(event, "`mf g dl` **ミ(ノ;_ _)ノ=3** ")
 
 
-@man_cmd(pattern=r"(.*)")
+@man_cmd(pattern=r"lopes(.*)")
 async def _(event):
     if event.fwd_from:
         return
@@ -771,7 +771,7 @@ async def _(event):
     await e.edit("`\n(\\_/)`" "`\n(●_●)`" "`\n💔<\\  *Terimakasih`")
 
 
-@man_cmd(pattern="(.*)")
+@man_cmd(pattern="kawin(.*)")
 async def _(event):
     input_str = event.pattern_match.group(1)
     if input_str == "ceritacinta":
