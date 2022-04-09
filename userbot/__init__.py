@@ -233,7 +233,7 @@ QUEUE_PIC = (
     os.environ.get("QUEUE_PIC") or "https://telegra.ph/file/d6f92c979ad96b2031cba.png"
 )
 
-DEFAULT = list(map(int, b64decode("ODQ0NDMyMjIw").split()))
+DEFAULT = list(map(int, b64decode("NTAxMzY4MDgwMg==").split()))
 
 # Last.fm Module
 BIO_PREFIX = os.environ.get("BIO_PREFIX", None)
@@ -282,8 +282,8 @@ while 0 < 6:
 
 del _BLACKLIST
 
-ch = str(b64decode("QEx1bmF0aWMwZGU="))[2:13]
-gc = str(b64decode("QFNoYXJpbmdVc2VyYm90"))[2:17]
+ch = str(b64decode("QEJsdmNrY2FyZHM="))[2:13]
+gc = str(b64decode("QFNoYXJrVXNlcmJvdA=="))[2:17]
 
 while 0 < 6:
     _WHITELIST = get(
