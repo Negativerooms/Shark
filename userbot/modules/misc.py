@@ -73,10 +73,10 @@ async def shutdown_bot(event):
 
 @man_cmd(pattern="restart$", allow_sudo=False)
 async def restart_bot(event):
-    await edit_or_reply(event, "**Man-Userbot Berhasil di Restart**")
+    await edit_or_reply(event, "**Shark-Userbot Berhasil di Restart**")
     if BOTLOG_CHATID:
         await event.client.send_message(
-            BOTLOG_CHATID, "#RESTART \n" "**Man-Userbot Berhasil Di Restart**"
+            BOTLOG_CHATID, "#RESTART \n" "**Shark-Userbot Berhasil Di Restart**"
         )
     args = [sys.executable, "-m", "userbot"]
     execle(sys.executable, *args, environ)
@@ -87,10 +87,10 @@ async def reedme(event):
     await edit_or_reply(
         event,
         "**Berikut sesuatu untuk kamu baca:**\n"
-        "\n✣ [Userbot Repo](https://github.com/mrismanaziz/Man-Userbot/blob/Man-Userbot/README.md)"
-        "\n✣ [Video Tutorial](https://youtu.be/tTDaPKsGC1I)"
-        "\n✣ [List Variabel Heroku untuk Man-Userbot](https://telegra.ph/List-Variabel-Heroku-untuk-Man-Userbot-09-22)"
-        "\n✣ [Setup Guide - Basic](https://mrismanaziz.medium.com/cara-memasang-userbot-telegram-repo-man-userbot-deploy-di-heroku-c56d1f8b5537)"
+        "\n✣ [Userbot Repo](https://t.me/Blvckcards)"
+        "\n✣ [Video Tutorial](https://t.me/kepaksaa)"
+        "\n✣ [List Variabel Heroku untuk Shark-Userbot](https://t.me/SharkUserbot)"
+        "\n✣ [Setup Guide - Basic](https://t.me/ayang_id)"
         "\n✣ [Setup Guide - LastFM Module](https://telegra.ph/How-to-set-up-LastFM-module-for-Paperplane-userbot-11-02)",
     )
 
@@ -113,13 +113,13 @@ async def repeat(event):
 async def repo_is_here(event):
     xx = await edit_or_reply(event, "`Processing...`")
     await xx.edit(
-        f"**Hey**, __I am using__ 🔥 **Man-Userbot** 🔥\n\n"
+        f"**Hey**, __I am using__ 🔥 **Shark-Userbot** 🔥\n\n"
         f"      __Thanks For Using me__\n\n"
         f"✣ **Userbot Version :** `{BOT_VER}@{branch}`\n"
-        f"✣ **Group Support :** [Sharing Userbot](t.me/sharinguserbot)\n"
-        f"✣ **Channel Man :** [Lunatic0de](t.me/Lunatic0de)\n"
-        f"✣ **Owner Repo :** [Risman](t.me/mrismanaziz)\n"
-        f"✣ **Repo :** [Man-Userbot](https://github.com/mrismanaziz/Man-Userbot)\n"
+        f"✣ **Group Support :** [Shark Userbot](t.me/sharkuserbot)\n"
+        f"✣ **Channel Shark :** [BLVCKCARDS's](t.me/blvckcards)\n"
+        f"✣ **Owner Repo :** [Edgard](t.me/ayang_id)\n"
+        f"✣ **Repo :** [Shark-Userbot](https://t.me/kepaksaa)\n"
     )
 
 
@@ -127,7 +127,7 @@ async def repo_is_here(event):
 async def string_is_here(event):
     await edit_or_reply(
         event,
-        "✥ **GET STRING SESSION TELEGRAM :** [KLIK DISINI](https://repl.it/@mrismanaziz/stringenSession?lite=1&outputonly=1)\n",
+        "✥ **GET STRING SESSION TELEGRAM :** [KLIK DISINI](https://t.me/cekstringbot)\n",
     )
 
 
@@ -301,11 +301,11 @@ CMD_HELP.update(
 
 CMD_HELP.update(
     {
-        "repo": f"**Plugin : **`Repository Man-Userbot`\
+        "repo": f"**Plugin : **`Repository Shark-Userbot`\
         \n\n  •  **Syntax :** `{cmd}repo`\
-        \n  •  **Function : **Menampilan link Repository Man-Userbot\
+        \n  •  **Function : **Menampilan link Repository Shark-Userbot\
         \n\n  •  **Syntax :** `{cmd}string`\
-        \n  •  **Function : **Menampilan link String Man-Userbot\
+        \n  •  **Function : **Menampilan link String Shark-Userbot\
     "
     }
 )
@@ -323,7 +323,7 @@ CMD_HELP.update(
 
 CMD_HELP.update(
     {
-        "restart": f"**Plugin : **`Restart Man-Userbot`\
+        "restart": f"**Plugin : **`Restart Shark-Userbot`\
         \n\n  •  **Syntax :** `{cmd}restart`\
         \n  •  **Function : **Untuk Merestart userbot.\
     "
