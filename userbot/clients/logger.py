@@ -17,13 +17,14 @@ from userbot import MAN2, MAN3, MAN4, MAN5, bot, branch, tgbot
 from userbot.utils import checking
 
 MSG_ON = """
-🔥 **Man-Userbot Berhasil Di Aktifkan**
-━━
-➠ **Userbot Version -** `{}@{}`
-➠ **Ketik** `{}alive` **untuk Mengecheck Bot**
-━━
+⌗ ⏜  ֗ ✩ ֗ ִ  ❆‌ ࣪ ⩇‌⩇  ۪ ׁ ⇣ ◦  ֗ ִ ꑘ  ֢ ۫ 🍂 % ׂ  ִ 
+ (( 🍁 ))     
+    ⏝  ✦ ➠ **Shark-Userbot Running...**
+     ° ☆ ¸. ¸ ✦ ➠ **Version** - `{version} @{branch}`
+      ● .° °★   ✦ ➠ **Check Status Bot**`.alive`
+★　° :.　:.　.　¸ .  ¸ 
+ㅤ¸ .ㅤㅤㅤ᭡ ˖ ࣪ 🦊 ♪ ՞ ˖࣪  ٪   ࣪ ˖  𖥔  ᵎ  .  ۫ ⟳ ꒱
 """
-
 
 async def man_userbot_on():
     new_rights = ChatAdminRights(
