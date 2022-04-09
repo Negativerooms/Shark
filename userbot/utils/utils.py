@@ -64,7 +64,7 @@ async def autobot():
     if who.username:
         username = f"{who.username}_ubot"
     else:
-        username = f"man{(str(who.id))[5:]}ubot"
+        username = f"shark{(str(who.id))[5:]}ubot"
     bf = "@BotFather"
     await bot(UnblockRequest(bf))
     await bot.send_message(bf, "/cancel")
