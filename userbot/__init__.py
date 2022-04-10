@@ -142,7 +142,7 @@ SUDO_HANDLER = os.environ.get("SUDO_HANDLER", r"$")
 
 # Support
 GROUP = os.environ.get("GROUP", "SharkUserbot")
-CHANNEL = os.environ.get("CHANNEL", "Blvckcards")
+CHANNEL = os.environ.get("CHANNEL", "BLVCKCARDS's")
 
 # Heroku Credentials for updater.
 HEROKU_APP_NAME = os.environ.get("HEROKU_APP_NAME", None)
