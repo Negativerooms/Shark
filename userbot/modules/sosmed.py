@@ -125,6 +125,45 @@ async def _(event):
         await xx.delete()
 
 
+@man_cmd(pattern="ttsong(?: |$)(.*)")
+async def _(event):
+    xxnx = event.pattern_match.group(1)
+    if xxnx:
+        d_link = xxnx
+    elif event.is_reply:
+        d_link = await event.get_reply_message()
+    else:
+        return await edit_delete(
+            event,
+            "**Berikan Link Tiktok Pesan atau Reply Link Tiktok Untuk di Download**",
+        )
+    xx = await edit_or_reply(event, "`Video Song Sedang Diproses...`")
+    chat = "@ttsongs"
+    async with event.client.conversation(chat) as conv:
+        try:
+            msg_start = await conv.send_message("/start")
+            r = await conv.get_response()
+            msg = await conv.send_message(d_link)
+            details = await conv.get_response()
+            song = await conv.get_response()
+            text = await conv.get_response()
+            await event.client.send_read_acknowledge(conv.chat_id)
+        except YouBlockedUserError:
+            await event.client(UnblockRequest(chat))
+            msg_start = await conv.send_message("/start")
+            r = await conv.get_response()
+            msg = await conv.send_message(d_link)
+            details = await conv.get_response()
+            song = await conv.get_response()
+            text = await conv.get_response()
+            await event.client.send_read_acknowledge(conv.chat_id)
+        await event.client.send_file(event.chat_id, song)
+        await event.client.delete_messages(
+            conv.chat_id, [msg_start.id, r.id, msg.id, details.id, song.id, text.id]
+        )
+        await xx.delete()
+
+
 CMD_HELP.update(
     {
         "sosmed": f"**Plugin : **`sosmed`\
@@ -132,6 +171,8 @@ CMD_HELP.update(
         \n  •  **Function : **Download Media Dari Pinterest / Tiktok / Instagram.\
         \n\n  •  **Syntax :** `{cmd}dez` <link>\
         \n  •  **Function : **Download Lagu Via Deezloader\
+        \n\n  •  **Syntax :** `{cmd}ttsong` <link>\
+        \n  •  **Function : **Download Lagu Via TT song\
     "
     }
 )
