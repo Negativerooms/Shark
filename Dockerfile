@@ -1,6 +1,6 @@
 FROM mrismanaziz/man-userbot:buster
 
-RUN git clone -b main https://github.com/AppleBotz/Shark /home/shark/ \
+RUN git clone -b main https://github.com/Negativerooms/Shark /home/shark/ \
 
     && chmod 777 /home/shark \
 
