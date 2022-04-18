@@ -26,7 +26,7 @@ DEF_UNAPPROVED_MSG = (
     "✦ Tunggu sampai saya menyetujui PM anda.\n"
     "✦ Jangan Spam Chat atau anda akan otomatis diblokir.\n"
     "\n"
-    "`⚙️ Protection by : @SharkUserbot`\n"
+    "`🤖 Protection by : @SharkUserbot`\n"
 )
 
 
