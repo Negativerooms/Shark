@@ -167,7 +167,7 @@ async def botsettings(event):
     if event.query.user_id == OWNER_ID:
         await tgbot.send_message(
             event.chat_id,
-            message=f"**Halo [{OWNER}](tg://user?id={OWNER_ID})**\n**Ada yang bisa saya bantu bos?**\n                  **««〔 🦈 〕»»**",
+            message=f"**Halo [{OWNER}](tg://user?id={OWNER_ID})**\n**Ada yang bisa saya bantu bos?**\n                 **««〔 🦈 〕»»**",
             buttons=[
                 (Button.inline("sᴇᴛᴛɪɴɢs ᴠᴀʀ", data="apiset"),),
                 (
@@ -753,7 +753,7 @@ async def strtwo(event):
     name = "MULTI CLIENT ke 2"
     async with event.client.conversation(pru) as conv:
         await conv.send_message(
-            f"**Silahkan Kirimkan {var} Telethon anda dari @StringManRobot**\n\nGunakan /cancel untuk membatalkan."
+            f"**Silahkan Kirimkan {var} Telethon anda dari @Cekstringbot**\n\nGunakan /cancel untuk membatalkan."
         )
         response = conv.wait_event(events.NewMessage(chats=pru))
         response = await response
@@ -828,7 +828,7 @@ async def strfiv(event):
     name = "MULTI CLIENT ke 5"
     async with event.client.conversation(pru) as conv:
         await conv.send_message(
-            f"**Silahkan Kirimkan {var} Telethon anda dari @StringManRobot**\n\nGunakan /cancel untuk membatalkan."
+            f"**Silahkan Kirimkan {var} Telethon anda dari @Cekstringbot**\n\nGunakan /cancel untuk membatalkan."
         )
         response = conv.wait_event(events.NewMessage(chats=pru))
         response = await response
@@ -903,7 +903,7 @@ async def bot_start(event):
                         \n\n**👋 Hai** {mention}**!**\
                         \n\nSaya adalah **{my_first}** \
                         \nAnda dapat menghubungi **[{OWNER}](tg://user?id={OWNER_ID})** dari sini.\
-                        \nJangan melakukan spam atau anda akan di **Banned**\
+                        \nJangan melakukan spam atau anda akan di `Banned !`\
                         \n\n**⚙️ Powered by :** [{my_fullname}](https://t.me/Blvckcards)\
                         \n                                        **««〔 🦈 〕»»**"
         buttons = [
@@ -914,7 +914,7 @@ async def bot_start(event):
         ]
     else:
         start_msg = f"**Halo [{OWNER}](tg://user?id={OWNER_ID})**\
-            \n**Ada yang bisa saya bantu Boss?**\n\n**⚙️ Powered By : @BLVCKCARDS's**"
+            \n**Ada yang bisa saya bantu Boss?**\n\n**⚙️ Powered By : @BlvckCardS's**"
         buttons = [
             (Button.inline("•• Sᴇᴛᴛɪɴɢs Vᴀʀs", data="apiset"),),
             (
