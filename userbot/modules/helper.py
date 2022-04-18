@@ -10,10 +10,10 @@ async def usit(event):
     await edit_or_reply(
         event,
         f"**Hai {me.first_name} Kalo Anda Tidak Tau Perintah Untuk Memerintah Ku Ketik** `.help` Atau Bisa Minta Bantuan Ke:\n"
-        f"✣ **Group Support :** [Shark Userbot](t.me/sharkuserbot)\n"
-        f"✣ **Channel Shark :** [BLVCKCARDS's](t.me/Lunatic0de)\n"
+        f"✣ **Group Support :** [Shark Userbot](t.me/SharkUserbot)\n"
+        f"✣ **Channel Shark :** [BLVCKCARDS's](t.me/Blvckcards)\n"
         f"✣ **Owner Repo :** [Edgard](t.me/kepaksaa)\n"
-        f"✣ **Repo :** [Shark-Userbot](https://t.me/Blvckcards)\n",
+        f"✣ **Repo :** [Shark-Userbot](https://t.me/ayang_id)\n",
     )
 
 
@@ -21,7 +21,7 @@ async def usit(event):
 async def var(event):
     await edit_or_reply(
         event,
-        "**Daftar Lengkap Vars Dari Man-Userbot:** [KLIK DISINI](https://t.me/blvckcards)",
+        "**Daftar Lengkap Vars Dari Shark-Userbot:** [KLIK DISINI](https://t.me/blvckcards)",
     )
 
 
@@ -29,13 +29,13 @@ CMD_HELP.update(
     {
         "helper": f"**Plugin : **`helper`\
         \n\n  •  **Syntax :** `{cmd}ihelp`\
-        \n  •  **Function : **Bantuan Untuk Man-Userbot.\
+        \n  •  **Function : **Bantuan Untuk Shark-Userbot.\
         \n\n  •  **Syntax :** `{cmd}listvar`\
         \n  •  **Function : **Melihat Daftar Vars.\
         \n\n  •  **Syntax :** `{cmd}repo`\
-        \n  •  **Function : **Melihat Repository Man-Userbot.\
+        \n  •  **Function : **Melihat Repository Shark-Userbot.\
         \n\n  •  **Syntax :** `{cmd}string`\
-        \n  •  **Function : **Link untuk mengambil String Man-Userbot.\
+        \n  •  **Function : **Link untuk mengambil String Shark-Userbot.\
     "
     }
 )
