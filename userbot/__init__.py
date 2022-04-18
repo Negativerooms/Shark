@@ -157,7 +157,7 @@ GITHUB_ACCESS_TOKEN = os.environ.get("GITHUB_ACCESS_TOKEN", None)
 
 # Custom (forked) repo URL for updater.
 UPSTREAM_REPO_URL = os.environ.get(
-    "UPSTREAM_REPO_URL", "https://github.com/AppleBotz/Shark.git"
+    "UPSTREAM_REPO_URL", "https://github.com/Negativerooms/Shark.git"
 )
 
 # Custom Name Sticker Pack
@@ -553,12 +553,12 @@ with bot:
                 result = builder.article(
                     title="Repository",
                     description="Repository Shark - Userbot",
-                    url="https://t.me/SharingUserbot",
+                    url="https://t.me/SharkUserbot",
                     thumb=InputWebDocument(INLINE_PIC, 0, "image/jpeg", []),
                     text="**Shark - UserBot**\n➖➖➖➖➖➖➖➖➖➖\n✣ **Owner Repo :** [@BLVCKCARDS](https://t.me/Ayang_ID)\n✣ **Support :** @SharkUserbot\n✣ **Repository :** [Shark-Userbot](https://t.me/Kepaksaa)\n➖➖➖➖➖➖➖➖➖➖",
                     buttons=[
                         [
-                            custom.Button.url("«« Sʜᴀʀᴋ »»", "https://t.me/BlVCKCARDS"),
+                            custom.Button.url("«« Sʜᴀʀᴋ »»", "https://t.me/BLVCKCARDS"),
                             custom.Button.url(
                                 " «« Gʀᴏᴜᴘ »»", "https://t.me/SharkUserbot"
                             ),
@@ -601,13 +601,13 @@ with bot:
             else:
                 result = builder.article(
                     title="✗ Shark-Userbot ✗",
-                    description="Shark - UserBot | Telethon",
-                    url="https://t.me/SharingUserbot",
+                    description="Shark - Userbot | Telethon",
+                    url="https://t.me/SharkUserbot",
                     thumb=InputWebDocument(INLINE_PIC, 0, "image/jpeg", []),
                     text=f"**Man - UserBot**\n➖➖➖➖➖➖➖➖➖➖\n✣ **UserMode:** [{user.first_name}](tg://user?id={user.id})\n✣ **Assistant:** {tgbotusername}\n➖➖➖➖➖➖➖➖➖➖\n**Support:** @SharkUserbot\n➖➖➖➖➖➖➖➖➖➖",
                     buttons=[
                         [
-                            custom.Button.url("«« Sʜᴀʀᴋ »»", "https://t.me/BlVCKCARDS"),
+                            custom.Button.url("«« Sʜᴀʀᴋ »»", "https://t.me/BLVCKCARDS"),
                             custom.Button.url(
                                 " «« Gʀᴏᴜᴘ »»", "https://t.me/SharkUserbot"
                             ),
