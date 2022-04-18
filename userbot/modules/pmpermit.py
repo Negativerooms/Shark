@@ -26,7 +26,7 @@ DEF_UNAPPROVED_MSG = (
     "✦ Tunggu sampai saya menyetujui PM anda.\n"
     "✦ Jangan Spam Chat atau anda akan otomatis diblokir.\n"
     "\n"
-    "**⚙️ Powered by : @BLVCKCARDS's**\n"
+    "`⚙️ Protection by : @SharkUserbot`\n"
 )
 
 
@@ -244,7 +244,7 @@ async def approvepm(apprvpm):
         return await edit_delete(apprvpm, "**Owner has been approve...**")
 
     await edit_delete(
-        apprvpm, f"**Approve message from** [{name0}](tg://user?id={uid})", 5
+        apprvpm, f"**Approve Message From** [{name0}](tg://user?id={uid})", 5
     )
 
 
@@ -274,12 +274,12 @@ async def disapprovepm(disapprvpm):
             user = await disapprvpm.client.get_entity(inputArgs)
         except BaseException:
             return await edit_delete(
-                disapprvpm, "**Mohon Reply Pesan User Yang ingin ditolak.**"
+                disapprvpm, "**__Mohon Reply Pesan User Yang ingin ditolak.__**"
             )
 
         if not isinstance(user, User):
             return await edit_delete(
-                disapprvpm, "**Mohon Reply Pesan User Yang ingin ditolak.**"
+                disapprvpm, "**__Mohon Reply Pesan User Yang ingin ditolak.__**"
             )
 
         aname = user.id
@@ -298,7 +298,7 @@ async def disapprovepm(disapprvpm):
 
     await edit_or_reply(
         disapprvpm,
-        f" **Maaf Pesan** [{name0}](tg://user?id={aname}) **Telah Ditolak, Mohon Jangan Melakukan Spam Ke Room Chat!**",
+        f" **__Maaf Pesan__** [{name0}](tg://user?id={aname}) **__Telah Ditolak, Mohon Jangan Melakukan Spam Ke Room Chat!__**",
     )
 
 
